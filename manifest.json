@@ -1,0 +1,41 @@
+{
+  "manifest_version": 2,
+  "name": "Digital Signage Extension",
+  "version": "1.0",
+  "kiosk_enabled": true,
+  "offline_enabled": true,
+  "description": "Play digital signage player. This extension displays page from signlauncher.com",
+
+  "app": {
+    "background": {
+      "scripts": [
+        "scripts/background.js",
+        "scripts/jquery-3.1.1.min.js"
+      ]
+    }
+  },
+  "icons": { "16": "icon.png", "128": "icon_128.png" },
+  "permissions": [
+    "http://localhost:5000/",
+    "https://s3.eu-central-1.amazonaws.com/",
+    "https://signlauncher.com/",
+    "http://signlauncher.com/",
+    "https://signlauncher.com/getPageNumber",
+    "https://signlauncher.com/getPage",
+    "https://signlauncher.com/loadurl",
+    "storage",
+    "fullscreen",
+    {
+      "fileSystem": [
+        "write",
+        "retainEntries",
+        "directory"
+      ]
+    },
+    "unlimitedStorage",
+    "overrideEscFullscreen",
+    "webview",
+    "power",
+    "background"
+  ]
+}

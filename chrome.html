@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  		<link href="css/bootstrap.css?1489153891643" rel="stylesheet">
+		  <script type="text/javascript" src="scripts/jquery-3.1.1.min.js"></script>
+		  <script type="text/javascript" src="app.js?1489153891643"></script>
+  </head>
+  <body>
+  	<div id="controls">
+      <button id="userID">User Id</button>
+    	<button id="loadPage">LoadPage</button>
+    	<button id="deviceSecret">Show Secret</button>
+      <div class="update_secret_div" style="display:none">
+          <input type="text" value="" id="secret_Field">
+          <button id="updateSecret">Update Secret</button>
+          <button id="hideSecret">Hide Secret</button>
+      </div>
+      <div id="iframe_body"></div>
+    </div>
+    <webview id="webview" src="https://signlauncher.com/" width="1" height="1" style="display:none;"></webview>
+
+  	<div id="layout" style="display:none;">
+  		<div class="col-lg-12 f_1">
+  		</div>
+  	</div>
+  </body>
+</html>
